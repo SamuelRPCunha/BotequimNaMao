@@ -12,5 +12,6 @@ O objetivo é criar uma aplicação que concilia o estoque de um bar com um cat�
 ## Ideia de design
 
 A seguir um vídeo ilustrando a ideia da aplicação
+
 https://github.com/user-attachments/assets/6a0a34d8-f4b7-43b3-940d-3c6f66614a59
 
