@@ -12,3 +12,6 @@ O objetivo é criar uma aplicação que concilia o estoque de um bar com um cat�
 ## Como Executar
 1. Clone este repositório.
 2. Abra o arquivo `index.html` em seu navegador.
+
+https://github.com/user-attachments/assets/6a0a34d8-f4b7-43b3-940d-3c6f66614a59
+
