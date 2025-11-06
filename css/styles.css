@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+}
+
+#login_e_nav {
+  display: flex;
+  margin: auto;
+  padding: 2rem;
+  gap: 16rem;
+  align-items: center;
+}
+
+#logo_botequim_na_mao {
+  width: 3.4rem;
+  border-radius: 100px;
+}
+
+#logo_header {
+  display: flex;
+  align-content: inherit;
+  gap: 12px;
+}
+
+#logo_texto h1 {
+  font-size: 2rem;
+}
+
+#nav {
+  display: flex;
+  flex: 1;
+}
+
+#barra_de_pesquisa {
+  margin-left: 36px;
+  margin-right: 80px;
+  align-items: center;
+}
+
+#barra_de_pesquisa form {
+  display: flex;
+  justify-content: center;
+}
+
+#login_area {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
