@@ -3,17 +3,29 @@
   padding: 0;
 }
 
+:root {
+  --cor-texto_logo: #6c50e9;
+  --cor-titulo: #000000;
+  --cor-subtitulo: #656565;
+}
+
+
+/* ------------- HEADER ------------- */
+
 #header {
   display: flex;
   align-items: center;
+  border-bottom: 0.01rem solid var(--cor-titulo);
 }
 
 #login_e_nav {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 4rem 0 4rem;
+  padding: 1rem 6rem;
   display: flex;
-  margin: auto;
-  padding: 2rem;
-  gap: 16rem;
   align-items: center;
+  
 }
 
 #logo_botequim_na_mao {
@@ -29,6 +41,11 @@
 
 #logo_texto h1 {
   font-size: 2rem;
+  color: var(--cor-texto_logo);
+}
+
+#logo_texto p {
+  color: var(--cor-subtitulo);
 }
 
 #nav {
@@ -37,9 +54,10 @@
 }
 
 #barra_de_pesquisa {
-  margin-left: 36px;
-  margin-right: 80px;
+  margin: auto;
+  margin-right: 56rem;
   align-items: center;
+  list-style: none;
 }
 
 #barra_de_pesquisa form {
@@ -48,7 +66,25 @@
 }
 
 #login_area {
-  margin-left: auto;
   display: flex;
-  justify-content: flex-end;
+  list-style: none;
+}
+
+/* ------------- MAIN ------------- */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 8.9rem 0 8.9rem;
+  padding: 2rem 1rem;
+}
+
+#disponibilidade_e_filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#disponibilidade_e_filtros p {
+  color: var(--cor-subtitulo);
 }
