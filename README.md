@@ -76,7 +76,7 @@ Este projeto foi desenvolvido atendendo aos seguintes requisitos técnicos da di
 
 ## 📸 Screenshots
 
-Atualizar readme
+https://github.com/user-attachments/assets/37d54936-0c16-42bf-8ba4-dfd4d89bb874
 
 -----
 
