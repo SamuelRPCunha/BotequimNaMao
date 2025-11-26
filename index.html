@@ -11,7 +11,7 @@
   <Header class="header">
     <div class="login_e_nav">
       <div class="logo_header">
-        <img class="logo_botequim_na_mao" src="./images/homepage/logo_botequim_na_mao_1.png" alt="Logo Botequim na Mão">
+        <img class="logo_botequim_na_mao" src="./images/homepage/header/logo_botequim_na_mao_1.png" alt="Logo Botequim na Mão">
   
         <div class="logo_texto">
           <h1>Botequim na Mão</h1>
@@ -22,9 +22,11 @@
       <nav class="nav">
         <ul class="barra_de_pesquisa">
           <li>
-            <form action="" >
-              <input type="text" name="" id="">
-              <button>BUTÃO_FILTRO</button>
+            <div class="div_barra_pesquisa_e_filtro">
+              <form action="" >
+              <input type="text" name="" id="" class="input_barra_de_pesquisa">
+              <button class="button_filtro_header"><img src="./images/homepage/header/garden_filter-stroke-12.svg" alt="pesquisa_filtro"></button>
+            </div>
             </form>
           </li>
         </ul>
@@ -32,7 +34,7 @@
         <ul class="login_area">
           <li>
             <form action="">
-              <button>BUTÃO_LOGIN</button>
+              <button class="button_login"><img src="./images/homepage/header/login.svg" alt="botão_login"></button>
             </form>
           </li>
         </ul>
@@ -42,31 +44,23 @@
 
   <main class="main">
     <section class="disponibilidade_e_filtros">
-      <div id="disponibilidade_texto">
+      <div class="disponibilidade_texto">
         <h1>Cardápio Disponível</h1>
         <p>XX de ZZ drinks disponíveis</p>
       </div>
       
       <div class="disponibilidade_filtros">
         <form action="">
-          <button>BUTÃO FILTRO</button>
-          <button>BUTÃO FILTRO</button>
-          <button>BUTÃO FILTRO</button>
-          <button>BUTÃO FILTRO</button>
-          <button>BUTÃO FILTRO</button>
+          <button>Todos</button>
+          <button>Clássicos</button>
+          <button>Tropicais</button>
+          <button>Refrescantes</button>
+          <button>Fortes</button>
         </form>
       </div>
     </section>
 
-    <section id="conjunto_cards_bebidas">
-      <div class="cards_bebidas">
-        <img src="" alt="Imagem ilustrativa bebida">
-        <h1>Bebida</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate impedit earum </p>
-
-        <h2>Ingredientes</h2>
-        <p>Cachaça</p>
-      </div>
+    <section class="conjunto_cards_bebidas" id="conjunto_cards_bebidas">
     </section>
   </main>
 
@@ -81,30 +75,33 @@
         </div>
       </section>
 
-      <section class="footer_texto">
-        <h2>Contato</h2>
+      <section class="footer_contatos">
+        <h2>Contatos</h2>
             
         <div class="contatos">
-          <img src="" alt="icone_ex">
+          <img src="./images/homepage/footer/contatos/solar_phone-bold.svg" alt="telefone">
           <p>(63) 93245-3249</p>
         </div>
 
         <div class="contatos">
-          <img src="" alt="icone_ex">
+          <img src="./images/homepage/footer/contatos/material-symbols_mail.svg" alt="email">
           <p>drinks@botequimnamao.com.br</p>
         </div>
 
         <div class="contatos">
-          <img src="" alt="icone_ex">
+          <img src="./images/homepage/footer/contatos/si_pin-fill.svg" alt="endereço">
           <p>Rua dos Drinks, 123 - Palmas, TO</p>
         </div>
       </section>
 
-      <section class="footer_texto">
+      <section class="footer_redes">
         <h2>Redes Sociais</h2>
         
-        <img src="" alt="icone_ex">
-        <img src="" alt="icone_ex">
+        <div>
+          <img src="./images/homepage/footer/redes/skill-icons_instagram.svg" alt="instagram">
+          <img src="./images/homepage/footer/redes/skill-icons_linkedin.svg" alt="linkedin">
+        </div>
+        
         <p>Siga-nos para novidades e promoções especiais!</p>
       </section>
     </section>
@@ -117,5 +114,7 @@
       </section>
     </section>
   </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
