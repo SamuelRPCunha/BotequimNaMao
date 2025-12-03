@@ -172,14 +172,6 @@ body {
   box-shadow: 0 1px 4px 0 rgb(0, 0, 0, 0.25);
 }
 
-/* .disponibilidade_e_filtros button:hover {
-  min-height: 2.5rem;
-  background-color: #fdbfff;
-  border: 0.063rem solid var(--cor-borda_filtro_main);
-  box-shadow: 0 1px 4px 0 rgb(0, 0, 0, 0.25);
-  transition: 0.5s;
-} */
-
 .conjunto_cards_bebidas {
   display: grid;
   grid-template-columns: 30rem 30rem 30rem;

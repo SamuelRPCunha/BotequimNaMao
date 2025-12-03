@@ -5,7 +5,7 @@ const drinksList = document.getElementById('conjunto_cards_bebidas');
 async function loadRecipes() {
     try {
         // Busca o arquivo JSON
-        const response = await fetch('./data/recipes.json');
+        const response = await fetch('../data/recipes.json');
         const recipes = await response.json();
 
         // Para cada receita, cria um card
