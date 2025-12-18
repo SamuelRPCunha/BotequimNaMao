@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --cor-fundo-body: #FFF8FE;
+  --cor-branco: #FFFFFF;
+  --cor-texto_logo: #6c50e9;
+  --cor-titulo: #000000;
+  --cor-subtitulo: #656565;
+
+  --cor-fundo_button: #434141;
+  --cor-borda_filtro_main: #E0E0E0;
+  --cor-borda_card: #EFEFEF;
+
+  --borda-header-e-footer: #CCCCCC;
+
+  --footer_divisoria: #787878;
+  
+}
+
+body {
+  background-color: var(--cor-fundo-body);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ------------- GERAL -------------  */
+
+.logo_texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ------------- COMO FUNCIONA ------------- */
+
+.sect_como_funciona {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.375rem 22.5rem 
+}
+
+
+
+

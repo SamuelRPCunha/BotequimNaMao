@@ -1,0 +1,19 @@
+:root {
+  --cor-borda-button-cardapio: #E0E0E0;
+  --cor-fundo-button-cardapio: #FFFFFF;
+}
+
+.button_cardapio {
+  border: none;
+  background-color: transparent;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: var(--cor-fundo-button-cardapio);
+  border: 0.063rem solid var(--cor-borda-button-cardapio);
+}
+
+.button_cardapio:hover {
+  cursor: pointer;
+}

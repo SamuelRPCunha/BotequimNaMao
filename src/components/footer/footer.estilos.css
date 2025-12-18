@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--cor-branco);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 24rem;
+  border-top: 0.01rem solid var(--borda-header-e-footer);
+  gap: 4rem;
+}
+
+.footer_logo_contato_redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  color: var(--cor-subtitulo);
+}
+
+.logo_texto p {
+  width: 32rem;
+}
+
+.footer_contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer_divisoria {
+  width: 100%;
+  border: 0.063rem solid var(--footer_divisoria);
+}
+
+.footer_direitos {
+  text-align: center;
+}
