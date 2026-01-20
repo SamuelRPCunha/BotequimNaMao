@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './style.css'
 import { Header } from '../../components/header'
 import { HeroMain } from '../../components/heroMain'
@@ -8,16 +7,14 @@ import { Footer } from '../../components/footer'
 
 
 export function Home() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
-      <header className='header'>
-        <Header/>
-      </header>
+      <Header/>
       
       <main>
-        <section>
+        <section className='sect_hero' style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${import.meta.env.BASE_URL}images/page_principal/fundo.png')` 
+        }}>
           <HeroMain/>
         </section>
 

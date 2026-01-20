@@ -1,0 +1,122 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--cor-fundo-body);
+  padding: 1rem;
+}
+
+.box-login {
+  background-color: var(--cor-branco);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.btn-voltar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--cor-subtitulo2);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.btn-voltar:hover {
+  color: var(--cor-texto_logo);
+}
+
+.logo-login {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.box-login h2 {
+  color: var(--cor-titulo);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.subtitulo {
+  color: var(--cor-subtitulo2);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: var(--cor-titulo);
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda_filtro_main);
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: var(--cor-texto_logo);
+}
+
+.btn-entrar {
+  margin-top: 1rem;
+  padding: 12px;
+  background-color: var(--cor-texto_logo);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-entrar:hover {
+  opacity: 0.9;
+}
+
+.footer-login {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cor-subtitulo2);
+}
+
+.btn-toggle {
+  background: none;
+  border: none;
+  color: var(--cor-texto_logo);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}

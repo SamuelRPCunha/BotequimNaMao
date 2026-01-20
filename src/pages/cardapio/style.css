@@ -1,0 +1,150 @@
+.page-cardapio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--cor-fundo-body);
+}
+
+.area-filtro {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid var(--cor-borda_filtro_main);
+  animation: slideDown 0.3s ease-out;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.filtro-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.filtro-container h3 {
+  color: var(--cor-titulo);
+  margin-bottom: 0.5rem;
+}
+
+.filtro-container p {
+  color: var(--cor-subtitulo2);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.lista-ingredientes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.btn-ingrediente {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.btn-ingrediente:hover { background-color: #f5f5f5; }
+
+.btn-ingrediente.ativo {
+  background-color: var(--cor-texto_logo);
+  color: white;
+  border-color: var(--cor-texto_logo);
+}
+
+.btn-limpar {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--cor-subtitulo2);
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.main-cardapio {
+  flex: 1;
+  padding: 20px 0;
+}
+
+/* Estilos dos Cards */
+.conjunto_cards_bebidas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cards_bebidas {
+  background-color: var(--cor-branco);
+  border: 1px solid var(--cor-borda_card);
+  border-radius: 12px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards_bebidas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card_imagem {
+  width: 100%;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.card_imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section_card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.section_card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor-titulo);
+}
+
+.section_card p {
+  font-size: 0.9rem;
+  color: var(--cor-subtitulo2);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.section_card_ingredientes {
+  padding: 0 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-ingrediente {
+  background-color: #f3f3f3;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: #555;
+}

@@ -16,19 +16,19 @@ export function Footer () {
           <h2>Contatos</h2>
           
           <ItemContato 
-            src="/images/geral/footer/contatos/solar_phone-bold.svg"
+            src={`${import.meta.env.BASE_URL}images/geral/footer/contatos/solar_phone-bold.svg`}
             alt="telefone"
             p="(63) 93245-3249"
           />
           
           <ItemContato 
-            src="/images/geral/footer/contatos/material-symbols_mail.svg"
+            src={`${import.meta.env.BASE_URL}images/geral/footer/contatos/material-symbols_mail.svg`}
             alt="email"
             p="drinks@botequimnamao.com.br"
           />
 
           <ItemContato
-            src="/images/geral/footer/contatos/si_pin-fill.svg"
+            src={`${import.meta.env.BASE_URL}images/geral/footer/contatos/si_pin-fill.svg`}
             alt="endereço"
             p="Rua dos Drinks, 123 - Luzivegas, TO"
           />

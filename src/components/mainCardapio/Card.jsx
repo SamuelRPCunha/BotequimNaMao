@@ -1,19 +1,22 @@
 import { useState, useEffect } from 'react';
-import './card.estilos.css'
 
-export function Card() {
-  const [receitas, setReceitas] = useState([]);
+export function Card({ receitas }) {
+  const [listaReceitas, setListaReceitas] = useState([]);
 
   useEffect(() => {
-    fetch('/data/recipes.json')
-      .then(res => res.json())
-      .then(data => setReceitas(data));
-  }, []);
+    if (receitas) {
+      setListaReceitas(receitas);
+    } else {
+      fetch('/data/recipes.json')
+        .then(res => res.json())
+        .then(data => setListaReceitas(data));
+    }
+  }, [receitas]);
 
   return (
     <div className="conjunto_cards_bebidas">
       {}
-      {receitas.map((receita) => (
+      {listaReceitas.map((receita) => (
         
         // Aqui é o "Card" escrito direto em JSX
         <div key={receita.id} className="cards_bebidas">
@@ -28,14 +31,11 @@ export function Card() {
           </div>
 
           <div className='section_card_ingredientes'>
-            <div className='span_ingredientes_card'>
-              {receita.ingredientsNeeded.map((ingrediente, index) => (
-              <span key={index} className="tag-ingrediente">
-                {ingrediente}
-              </span>
-              ))}
-            </div>
-            
+            {receita.ingredientsNeeded.map((ingrediente, index) => (
+            <span key={index} className="tag-ingrediente">
+              {ingrediente}
+            </span>
+            ))}
           </div>
         </div>
 
