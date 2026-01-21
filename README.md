@@ -1,5 +1,5 @@
 
-# 🍹 Botequim na Mão
+# Botequim na Mão
 
 > **Projeto Integrador — Introdução à Programação Web**
 
@@ -7,14 +7,14 @@ O **Botequim na Mão** é um cardápio digital inteligente que resolve a frustra
 
 -----
 
-## 🔗 Links
+## Links
 
   - **Deploy (Vercel/Netlify/GitHub Pages):** https://samuelrpcunha.github.io/BotequimNaMao/
   - **Repositório:** https://github.com/SamuelRPCunha/BotequimNaMao.git
 
 -----
 
-## 📱 Funcionalidades
+## Funcionalidades
 
 ### Para o Cliente (Visitante)
 
@@ -26,15 +26,16 @@ O **Botequim na Mão** é um cardápio digital inteligente que resolve a frustra
 ### Para o Administrador (Dono)
 
   - **Gestão de Estoque:** Interface para marcar/desmarcar ingredientes disponíveis.
-  - **Persistência:** O estoque salvo permanece o mesmo mesmo após recarregar a página (uso de `localStorage`).
+  - **Gerenciamento de Cardápio:** Adição de novas bebidas (com upload de imagem) e remoção de itens existentes.
+  - **Persistência:** O estoque e as novas receitas salvas permanecem mesmo após recarregar a página (uso de `localStorage`).
 
 -----
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
   - **HTML5:** Semântica e estrutura.
   - **CSS3:** Estilização responsiva (Mobile-First), Flexbox, CSS Grid e Variáveis CSS.
-  - **JavaScript (Vanilla):** Lógica de programação, manipulação do DOM e consumo de dados.
+  - **JavaScript:** Lógica de programação, manipulação do DOM e consumo de dados.
 
 -----
 
@@ -67,17 +68,18 @@ Este projeto foi desenvolvido atendendo aos seguintes requisitos técnicos da di
 
 ### 5\. API HTML5 Opcional
 
-  - **History API:** Navegação entre abas sem recarregar.
+  - **History API:** Navegação (botão voltar) sem recarregar.
+  - **File API:** Leitura de arquivos de imagem (`FileReader`) para upload e pré-visualização no cadastro de bebidas.
 
 -----
 
-## 📸 Screenshots
+## Screenshots
 
 https://github.com/user-attachments/assets/37d54936-0c16-42bf-8ba4-dfd4d89bb874
 
 -----
 
-## 🚀 Como Executar Localmente
+## Como Executar Localmente
 
 1.  **Clone o repositório:**
     ```bash
@@ -94,7 +96,7 @@ https://github.com/user-attachments/assets/37d54936-0c16-42bf-8ba4-dfd4d89bb874
 
 -----
 
-## ✅ Checklist de Conformidade
+## Checklist de Conformidade
 
   - [x] Estruturas básicas (condicionais, laços, funções).
   - [x] Objetos + Arrays com map/filter/reduce (≥ 3 métodos).
@@ -109,7 +111,7 @@ https://github.com/user-attachments/assets/37d54936-0c16-42bf-8ba4-dfd4d89bb874
 
 -----
 
-## 🤖 Declaração de Uso de IA
+## Declaração de Uso de IA
 
 Conforme as diretrizes de integridade acadêmica, declaro o uso de ferramentas de IA (ChatGPT/Gemini) nas seguintes etapas:
 
