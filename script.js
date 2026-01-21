@@ -228,6 +228,18 @@ function initGestao() {
       const name = document.getElementById('new-name').value;
       const desc = document.getElementById('new-desc').value;
       const ingredientsStr = document.getElementById('new-ingredients').value;
+      const imageInput = document.getElementById('new-image');
+      
+      let imageSrc = 'images/geral/header/logo_botequim_na_mao_1.png'; // Imagem padrão
+
+      if (imageInput.files && imageInput.files[0]) {
+        const file = imageInput.files[0];
+        imageSrc = await new Promise((resolve) => {
+          const reader = new FileReader();
+          reader.onload = (e) => resolve(e.target.result);
+          reader.readAsDataURL(file);
+        });
+      }
       
       // Processa os dados
       const ingredientsList = ingredientsStr.split(',').map(i => i.trim()).filter(i => i);
@@ -237,7 +249,7 @@ function initGestao() {
         id: Date.now(),
         name: name,
         description: desc,
-        image: 'images/geral/header/logo_botequim_na_mao_1.png', // Imagem padrão
+        image: imageSrc,
         tags: ['Novidade'],
         ingredientsNeeded: ingredientsList
       };
