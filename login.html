@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Botequim na Mão - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page-login" class="container-login">
+    
+    <!-- MODAL -->
+    <div id="modal" class="modal-overlay">
+      <div class="modal-box">
+        <p id="modal-msg"></p>
+        <button id="modal-btn">OK</button>
+      </div>
+    </div>
+
+    <div class="box-login">
+      <div class="header-login">
+        <button class="btn-voltar" onclick="window.history.back()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5"></path>
+            <path d="M12 19L5 12L12 5"></path>
+          </svg>
+          Voltar
+        </button>
+        <img src="images/geral/header/logo_botequim_na_mao_1.png" alt="Logo" class="logo-login">
+      </div>
+
+      <h2 id="login-title">Acesse sua conta</h2>
+      <p id="login-subtitle" class="subtitulo">Bem-vindo de volta! Por favor, insira seus dados.</p>
+
+      <form id="form-login" class="form-login">
+        <div class="input-group" id="group-name" style="display: none;">
+          <label>Nome completo</label>
+          <input type="text" id="input-name" placeholder="Ex: Samuel Cunha">
+        </div>
+        
+        <div class="input-group">
+          <label>E-mail</label>
+          <input type="text" id="input-email" placeholder="exemplo@email.com" required>
+        </div>
+
+        <div class="input-group">
+          <label>Senha</label>
+          <input type="password" id="input-password" placeholder="********" required>
+        </div>
+
+        <button type="submit" id="btn-submit" class="btn-entrar">Entrar</button>
+      </form>
+
+      <div class="footer-login">
+        <p>
+          <span id="toggle-text">Não tem uma conta?</span>
+          <button id="toggle-btn" class="btn-toggle">Cadastre-se</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

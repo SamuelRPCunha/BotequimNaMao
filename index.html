@@ -1,13 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Botequim na Mao</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Botequim na Mão - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="login_e_nav">
+      <a href="index.html" class="logo_header">
+        <img src="images/geral/header/logo_botequim_na_mao_1.png" alt="Logo" class="logo_botequim_na_mao">
+        <div class="logo_texto">
+          <h1>Botequim na Mão</h1>
+          <p>Seu cardápio inteligente</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="cardapio.html" class="button_login">Cardápio</a>
+        <a href="login.html" class="button_login">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="sect_hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/page_principal/fundo.png');">
+      <div class="hero-content">
+        <h1>Nunca mais peça um drink em falta.</h1>
+        <p>O Botequim na Mão conecta o estoque do bar com o seu desejo. Veja apenas o que pode ser feito agora.</p>
+        <a href="cardapio.html" class="btn-cta">Ver Cardápio</a>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="sect_como_funciona">
+      <div class="box_como_funciona">
+        <div class="box_numerador">1</div>
+        <h2>Marque os Ingredientes</h2>
+        <p>O bar marca os ingredientes em estoque, e o cliente vê apenas os drinks que são 100% possíveis de fazer naquele momento.</p>
+      </div>
+
+      <div class="box_como_funciona">
+        <div class="box_numerador">2</div>
+        <h2>Filtragem Automática</h2>
+        <p>O sistema filtra os drinks disponíveis em tempo real.</p>
+      </div>
+
+      <div class="box_como_funciona">
+        <div class="box_numerador">3</div>
+        <h2>Cliente Feliz</h2>
+        <p>Clientes veem apenas drinks que podem ser preparados.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background-color: var(--cor-branco); padding: 2rem; text-align: center; border-top: 1px solid var(--borda-header-e-footer);">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <img src="images/geral/header/logo_botequim_na_mao_1.png" alt="Logo" style="width: 3rem; margin-bottom: 1rem;">
+      <p style="color: var(--cor-subtitulo2);">
+        &copy; 2026 Botequim na Mão. Todos os direitos reservados.<br>
+        Desenvolvido por Samuel R. P. Cunha
+      </p>
+      <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+        <a href="#" style="color: var(--cor-texto_logo);">Instagram</a>
+        <a href="#" style="color: var(--cor-texto_logo);">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
