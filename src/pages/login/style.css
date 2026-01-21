@@ -21,11 +21,14 @@
 .header-login {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .btn-voltar {
+  position: absolute;
+  left: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -120,4 +123,16 @@
   cursor: pointer;
   margin-left: 0.5rem;
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .box-login {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-voltar {
+    display: none;
+  }
 }

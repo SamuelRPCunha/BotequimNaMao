@@ -10,7 +10,6 @@ export function HeroMain () {
           O cliente fala os ingredientes desejados, e o bar vê apenas os drinks que são 100% possíveis de fazer naquele momento.
         </p>
         <div className='div_hero_main'>
-          <button className='button_comecar'>Começar</button>
           <BotaoCardapio/>
         </div>
       </div>

@@ -15,6 +15,7 @@
   padding: 1rem 2rem;
   justify-content: space-between;
   flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
 .logo_botequim_na_mao {
@@ -24,7 +25,7 @@
 
 .logo_header {
   display: flex;
-  align-content: inherit;
+  align-items: center;
   gap: 12px;
 }
 
@@ -106,4 +107,28 @@
 
 .botao_voltar_header:hover {
   transform: translateY(-50%) translateX(-3px);
+}
+
+@media (max-width: 768px) {
+  .login_e_nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .logo_header {
+    order: 1;
+  }
+
+  .nav {
+    order: 2;
+  }
+
+  .logo_texto p {
+    display: none;
+  }
+
+  .botao_voltar_header {
+    display: none;
+  }
 }

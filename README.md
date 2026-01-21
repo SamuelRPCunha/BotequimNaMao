@@ -67,10 +67,7 @@ Este projeto foi desenvolvido atendendo aos seguintes requisitos técnicos da di
 
 ### 5\. API HTML5 Opcional
 
-  - **[ESCOLHA UMA E REMOVA AS OUTRAS]:**
-      - **Clipboard API:** Botão para copiar a lista de ingredientes do drink.
-      - **Audio API:** Efeito sonoro ao adicionar um item ao estoque.
-      - **History API:** Navegação entre abas sem recarregar.
+  - **History API:** Navegação entre abas sem recarregar.
 
 -----
 
@@ -99,16 +96,16 @@ https://github.com/user-attachments/assets/37d54936-0c16-42bf-8ba4-dfd4d89bb874
 
 ## ✅ Checklist de Conformidade
 
-  - [ ] Estruturas básicas (condicionais, laços, funções).
-  - [ ] Objetos + Arrays com map/filter/reduce (≥ 3 métodos).
-  - [ ] Arrow functions (incluindo eventos).
-  - [ ] DOM dinâmico (criação/remoção/atualização; formulários e eventos).
-  - [ ] Requisição assíncrona com fetch + loading/erros.
-  - [ ] Promises (.then/.catch) e async/await (try/catch).
-  - [ ] Web Storage para persistência.
-  - [ ] +1 API HTML5 opcional (File/Geolocation/History/Canvas/Audio/Video/Clipboard). *(Marque se implementou)*
-  - [ ] Responsivo + semântica + acessibilidade básica.
-  - [ ] Organização de arquivos e README completo.
+  - [x] Estruturas básicas (condicionais, laços, funções).
+  - [x] Objetos + Arrays com map/filter/reduce (≥ 3 métodos).
+  - [x] Arrow functions (incluindo eventos).
+  - [x] DOM dinâmico (criação/remoção/atualização; formulários e eventos).
+  - [x] Requisição assíncrona com fetch + loading/erros.
+  - [x] Promises (.then/.catch) e async/await (try/catch).
+  - [x] Web Storage para persistência.
+  - [x] +1 API HTML5 opcional (File/Geolocation/History/Canvas/Audio/Video/Clipboard). *(Marque se implementou)*
+  - [x] Responsivo + semântica + acessibilidade básica.
+  - [x] Organização de arquivos e README completo.
 
 -----
 

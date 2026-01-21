@@ -15,7 +15,9 @@ export function Home() {
         <section className='sect_hero' style={{ 
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${import.meta.env.BASE_URL}images/page_principal/fundo.png')` 
         }}>
-          <HeroMain/>
+          <div className="hero-content">
+            <HeroMain/>
+          </div>
         </section>
 
         <section className='sect_como_funciona'>

@@ -2,7 +2,7 @@
   background-color: var(--cor-branco);
   display: flex;
   flex-direction: column;
-  padding: 4rem 24rem;
+  padding: 4rem 10%;
   border-top: 0.01rem solid var(--borda-header-e-footer);
   gap: 4rem;
 }
@@ -17,7 +17,8 @@
 }
 
 .logo_texto p {
-  width: 32rem;
+  width: 100%;
+  max-width: 32rem;
 }
 
 .footer_contatos {
@@ -33,4 +34,15 @@
 
 .footer_direitos {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer_logo_contato_redes {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

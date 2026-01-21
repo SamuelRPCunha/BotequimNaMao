@@ -5,23 +5,24 @@
   background-color: var(--cor-fundo-body);
 }
 
-.area-filtro {
-  background-color: #fff;
-  padding: 20px;
-  border-bottom: 1px solid var(--cor-borda_filtro_main);
-  animation: slideDown 0.3s ease-out;
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+.main-cardapio {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Área de Filtros */
+.area-filtro {
+  background-color: var(--cor-branco);
+  padding: 2rem;
+  border-bottom: 1px solid var(--borda-header-e-footer);
 }
 
 .filtro-container {
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .filtro-container h3 {
@@ -31,81 +32,77 @@
 
 .filtro-container p {
   color: var(--cor-subtitulo2);
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .lista-ingredientes {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 1rem;
+  gap: 0.5rem;
 }
 
 .btn-ingrediente {
-  padding: 8px 16px;
-  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--borda-header-e-footer);
   border-radius: 20px;
   background: transparent;
   cursor: pointer;
   transition: all 0.2s;
+  color: var(--cor-subtitulo);
   font-size: 0.9rem;
 }
 
-.btn-ingrediente:hover { background-color: #f5f5f5; }
+.btn-ingrediente:hover {
+  border-color: var(--cor-texto_logo);
+  color: var(--cor-texto_logo);
+}
 
 .btn-ingrediente.ativo {
   background-color: var(--cor-texto_logo);
-  color: white;
+  color: var(--cor-branco);
   border-color: var(--cor-texto_logo);
 }
 
 .btn-limpar {
+  margin-top: 1rem;
   background: none;
   border: none;
   text-decoration: underline;
   cursor: pointer;
   color: var(--cor-subtitulo2);
-  font-size: 0.85rem;
-  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
-.main-cardapio {
-  flex: 1;
-  padding: 20px 0;
+.btn-limpar:hover {
+  color: var(--cor-texto_logo);
 }
 
-/* Estilos dos Cards */
+/* Estilos dos Cards (Adicionado agora) */
 .conjunto_cards_bebidas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 0 2rem;
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .cards_bebidas {
   background-color: var(--cor-branco);
-  border: 1px solid var(--cor-borda_card);
-  border-radius: 12px;
-  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s;
 }
 
 .cards_bebidas:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card_imagem {
   width: 100%;
   height: 200px;
-  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .card_imagem img {
@@ -115,36 +112,50 @@
 }
 
 .section_card {
-  padding: 1rem;
+  padding: 1.5rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 .section_card h2 {
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
   color: var(--cor-titulo);
+  margin-bottom: 0.5rem;
 }
 
 .section_card p {
-  font-size: 0.9rem;
   color: var(--cor-subtitulo2);
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.section_card h2:last-of-type {
+  font-size: 1rem;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
 }
 
 .section_card_ingredientes {
-  padding: 0 1rem 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
 .tag-ingrediente {
-  background-color: #f3f3f3;
-  padding: 4px 10px;
-  border-radius: 15px;
+  background-color: var(--cor-fundo-body);
+  color: var(--cor-subtitulo);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
   font-size: 0.85rem;
-  color: #555;
+  border: 1px solid var(--borda-header-e-footer);
+}
+
+@media (max-width: 768px) {
+  .conjunto_cards_bebidas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }

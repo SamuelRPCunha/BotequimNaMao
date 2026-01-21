@@ -48,3 +48,21 @@
   border: 0;
   margin-right: 1rem;
 }
+
+@media (max-width: 768px) {
+  .barra_de_pesquisa {
+    position: static;
+    transform: none;
+    width: 100%;
+    order: 3;
+  }
+
+  .div_barra_pesquisa_e_filtro {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .input_barra_de_pesquisa {
+    width: 100%;
+  }
+}
